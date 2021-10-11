@@ -1,0 +1,34 @@
+version: "3"
+services:
+  node:
+    image: douglasq/alura-books:cap05
+    container_name: meu-app
+    ports:
+      - 8080:3000
+    networks:
+      - minha-rede
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: meu-mongo
+    networks:
+      - minha-rede
+  
+  # Exemplo de um serviço montado usando um Dockerfile.
+  #
+  # node-volume:
+  #   build:
+  #     dockerfile: ./volume-exemplo/Dockerfile
+  #     context: .
+  #   image: willrodrigues/node
+  #   container_name: meu-site
+  #   ports:
+  #     - 8080:3000
+  #   volumes:
+  #     - $(pwd):/var/exemplo
+
+networks:
+  minha-rede:
+    driver: bridge
