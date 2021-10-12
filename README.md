@@ -81,9 +81,9 @@ Alguns comandos vistos nas aulas.
 
 ### Sobre docker-compose
 
-- [docker-compose.yml](Aqui) você vê um exemplo de um arquivo *docker-compose*, ele é escrito no formato **YML**, nesse exemplo ele sobe uma simples aplicação e um simples banco de dados, ligando-os a mesma rede e fazendo eles se comunicarem. 
-
 - O arquivo `docker-compose` é uma forma de criar uma "receita" que diz para o Docker como executar os comandos contidos nele, isso é bom para evitar ficar escrevendo os comandos na linha de comando.
+
+- [Aqui](docker-compose.yml) você vê um exemplo de um arquivo *docker-compose*, ele é escrito no formato **YML**, nesse exemplo ele sobe uma simples aplicação e um simples banco de dados, ligando-os a mesma rede e fazendo eles se comunicarem. 
 
 
 ## Referências
